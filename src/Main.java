@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Book book1 = new Book("book", "Author", 100, true);
         Reader reader1 = new Reader("ReaderName", "ReaderLastName", "---------", 1);
+        Reader reader2 = new Reader("ReaderName2", "ReaderLastName2", "---------", 0);
         book1.printInfo();
         System.out.println("------------");
         book1.borrow();
@@ -14,5 +15,9 @@ public class Main {
         reader1.printData();
         reader1.increaseBorrowedCount();
         reader1.printData();
+
+        reader2.printData();
+        reader2.increaseBorrowedCount();
+        reader2.printData();
     }
 }
