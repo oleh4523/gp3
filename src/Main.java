@@ -3,6 +3,9 @@
 public class Main {
     public static void main(String[] args) {
         Book book1 = new Book("book", "Author", 100, true);
+        Book book2 = new Book("book", "Author", 100, true);
+        Book book3 = new Book("book", "Author", 100, true);
+
         Reader reader1 = new Reader("ReaderName", "ReaderLastName", "---------", 1);
         Reader reader2 = new Reader("ReaderName2", "ReaderLastName2", "---------", 0);
         book1.printInfo();
